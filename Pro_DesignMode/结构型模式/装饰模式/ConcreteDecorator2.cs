@@ -4,13 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Pro_DesignMode.装饰模式
+namespace Pro_DesignMode.结构型模式.装饰模式
 {
-    public class ConcreteDecorator : Decorator
+    public class ConcreteDecorator2 : Decorator
     {
-        public ConcreteDecorator(Component component) : base(component)
+       
+        public ConcreteDecorator2(Component component) : base(component)
         {
         }
+
         public override void Operation()
         {
             base.Operation();
@@ -19,7 +21,7 @@ namespace Pro_DesignMode.装饰模式
         //新增业务方法
         private void AddBegavior()
         {
-
+            Console.WriteLine("给构建新增功能2");
         }
     }
 }

@@ -1,0 +1,7 @@
+D:\WorkPlace\设计模式\DesignMode\Pro_DesignMode\bin\Debug\Pro_DesignMode.exe.config
+D:\WorkPlace\设计模式\DesignMode\Pro_DesignMode\bin\Debug\Pro_DesignMode.exe
+D:\WorkPlace\设计模式\DesignMode\Pro_DesignMode\bin\Debug\Pro_DesignMode.pdb
+D:\WorkPlace\设计模式\DesignMode\Pro_DesignMode\obj\Debug\Pro_DesignMode.csprojAssemblyReference.cache
+D:\WorkPlace\设计模式\DesignMode\Pro_DesignMode\obj\Debug\Pro_DesignMode.csproj.CoreCompileInputs.cache
+D:\WorkPlace\设计模式\DesignMode\Pro_DesignMode\obj\Debug\Pro_DesignMode.exe
+D:\WorkPlace\设计模式\DesignMode\Pro_DesignMode\obj\Debug\Pro_DesignMode.pdb
