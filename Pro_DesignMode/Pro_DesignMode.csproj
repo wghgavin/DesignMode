@@ -45,13 +45,20 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="创建型模式\建造者模式\Builder.cs" />
+    <Compile Include="创建型模式\建造者模式\ConcreteBuilder1.cs" />
+    <Compile Include="创建型模式\建造者模式\ConcreteBuilder2.cs" />
+    <Compile Include="创建型模式\建造者模式\Director.cs" />
+    <Compile Include="创建型模式\建造者模式\Product.cs" />
+    <Compile Include="创建型模式\抽象工厂模式\ConcreteProduct\AppleMotherBoard.cs" />
+    <Compile Include="创建型模式\抽象工厂模式\ConcreteProduct\AppleScreen.cs" />
+    <Compile Include="创建型模式\抽象工厂模式\AbstractProduct\MotherBoard.cs" />
+    <Compile Include="创建型模式\抽象工厂模式\AbstractProduct\Screen.cs" />
+    <Compile Include="创建型模式\抽象工厂模式\ConcreteProduct\XiaoMiMotherBoard.cs" />
+    <Compile Include="创建型模式\抽象工厂模式\ConcreteProduct\XiaoMiScreen.cs" />
     <Compile Include="创建型模式\抽象工厂模式\Factory\AbstractFactory.cs" />
-    <Compile Include="创建型模式\抽象工厂模式\AppleMotherBoard.cs" />
-    <Compile Include="创建型模式\抽象工厂模式\AppleScreen.cs" />
-    <Compile Include="创建型模式\抽象工厂模式\MotherBoard.cs" />
-    <Compile Include="创建型模式\抽象工厂模式\Screen.cs" />
-    <Compile Include="创建型模式\抽象工厂模式\XiaoMiMotherBoard.cs" />
-    <Compile Include="创建型模式\抽象工厂模式\XiaoMiScreen.cs" />
+    <Compile Include="创建型模式\抽象工厂模式\Factory\AppleFactory.cs" />
+    <Compile Include="创建型模式\抽象工厂模式\Factory\XiaoMiFactory.cs" />
     <Compile Include="结构型模式\桥接模式\BlackCoffee .cs" />
     <Compile Include="结构型模式\桥接模式\Coffee.cs" />
     <Compile Include="结构型模式\桥接模式\LargeCupCoffee.cs" />
@@ -74,10 +81,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="创建型模式\抽象工厂模式\ConcreteBase\" />
-    <Folder Include="创建型模式\抽象工厂模式\Concrete\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="创建型模式\Read.txt" />
     <Content Include="创建型模式\抽象工厂模式\抽象工厂模式.txt" />

@@ -7,13 +7,17 @@ using Pro_DesignMode.结构型模式.装饰模式;
 using Pro_DesignMode.结构型模式.组合模式;
 using Pro_DesignMode.结构型模式.桥接模式;
 using Pro_DesignMode.结构型模式.适配器模式;
+using Pro_DesignMode.创建型模式.抽象工厂模式.Factory;
+using Pro_DesignMode.创建型模式.抽象工厂模式.ConcreteProduct;
+using Pro_DesignMode.创建型模式.抽象工厂模式.AbstractProduct;
+using Pro_DesignMode.创建型模式.建造者模式;
 namespace Pro_DesignMode
 {
     class Program
     {
         static void Main(string[] args)
         {
-            AdapterModeTest();
+            BuilderModeTest();
         }
         #region 装饰模式调用
         private static void DecoratorModeTest()
@@ -55,6 +59,36 @@ namespace Pro_DesignMode
         {
             Target target = new Adapter(new Adaptee());
             target.MyAdapter();
+            Console.ReadKey();
+        }
+        #endregion
+
+        #region 抽象工厂模式调用
+        private void AbstractFactoryModeTest()
+        {
+            //小米工厂生产
+            AbstractFactory xiaomiFactory = new XiaoMiFactory();
+            MotherBoard xiaomiMotherBoard = xiaomiFactory.CreateMotherBoard();
+            xiaomiMotherBoard.Print();
+            Screen xiaomiScreen = xiaomiFactory.CreateScreen();
+            xiaomiScreen.Print();
+
+            //苹果生产
+            AbstractFactory appFactory = new AppleFactory();
+            Screen appleScreen = appFactory.CreateScreen();
+            appleScreen.Print();
+            MotherBoard motherBoard = appFactory.CreateMotherBoard();
+            motherBoard.Print();
+            Console.ReadKey();
+            
+        }
+        #endregion
+        #region 建造者模式调用
+        private static void BuilderModeTest()
+        {
+            Builder builder = new ConcreteBuilder1();
+            Product product = Director.Construct(builder);
+            product.Show();
             Console.ReadKey();
         }
         #endregion
